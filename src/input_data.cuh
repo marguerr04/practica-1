@@ -6,8 +6,12 @@
 
 // 
 __device__ constexpr TreeChunk get_input_data() {
-    return TreeChunkBuilder(Version::v1_8_9, Biome::Taiga)
-        .tree_unknown(0, 0)
+    return TreeChunkBuilder(Version::v1_16_4, Biome::Forest)
+        .tree_oak(175, -986, IntRange(4), "????""?1??""0100")
+        .tree_oak(170, -987, IntRange(6), "??11""1111""1001")
+        .tree_oak(167, -985, IntRange(5), "01??""10?1""1110")
+        .tree_oak(170, -982, IntRange(5), "01??""10?1""1110")
+        .tree_oak(166, -979, IntRange(4), "???1""1??1""0011")
         .build();
 }
 
